@@ -175,3 +175,38 @@ void Linkedlist::displayAllData(const Linkedlist &list1)
 
     return;
 };
+
+// Traversing, it returns second last element
+Node *Linkedlist::Traverse(const Linkedlist &list1)
+{
+
+    if (this->HEAD == nullptr && this->TAIL == nullptr) // Empty condition
+    {
+        std::cout << "Empty List \n";
+        return nullptr;
+    }
+
+    Node *temp = this->HEAD; // temporary var
+
+    while (temp->next->next != nullptr) // until list is empty
+    {
+
+        temp = temp->next; // if not equal, we are moving to next node of list
+    }
+
+    return temp;
+}
+
+// To remove from tail
+void Linkedlist::removeTail(Linkedlist &list1)
+{
+
+    Node *pointer = this->Traverse(list1);
+
+    if (pointer->next->next == nullptr)
+    {
+        this->TAIL = pointer;
+        pointer->next = nullptr;
+    }
+    return;
+};

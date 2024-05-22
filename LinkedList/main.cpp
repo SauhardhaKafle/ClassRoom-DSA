@@ -18,6 +18,7 @@ int main()
 
     list1.insert(9, 1, list1); // inserting data 9 after 1
 
+    list1.removeTail(list1);
     list1.displayAllData(list1);
 };
 

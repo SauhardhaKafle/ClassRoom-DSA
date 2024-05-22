@@ -43,6 +43,8 @@ public:
     Node *find(int data, const Linkedlist &list1);
     void insert(int data, int after, const Linkedlist &list1);
     void displayAllData(const Linkedlist &list1);
+    Node *Traverse(const Linkedlist &list1);
+    void removeTail(Linkedlist &list1);
 
     // Destructor
     ~Linkedlist(){};
