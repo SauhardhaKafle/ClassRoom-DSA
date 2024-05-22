@@ -24,6 +24,14 @@ int main()
 
     std::cout << "..................Linkedlist Stack................\n";
     LinkedStack l;
+
     l.push(5);
+    l.push(4);
+    l.push(3);
+
+    std::cout << "pop : " << l.pop() << "\n";
     l.top();
+
+    std::cout << "IsEmpty : " << l.isEmpty() << "\n"
+              << "isfull : " << l.isFull() << "\n";
 }

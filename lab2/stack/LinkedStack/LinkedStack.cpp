@@ -26,14 +26,16 @@ bool LinkedStack::isFull()
 void LinkedStack::push(int data)
 {
     this->l.addToTail(data);
+    std::cout << "Pushed : " << data << "\n";
     return;
 };
 
 // removes the data of last
 int LinkedStack::pop()
 {
+    int data = this->l.TAIL->data;
     this->l.removeTail(this->l);
-    return -1;
+    return data;
 };
 
 int LinkedStack::top()

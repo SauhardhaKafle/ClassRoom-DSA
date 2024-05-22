@@ -45,6 +45,7 @@ public:
     void displayAllData(const Linkedlist &list1);
     Node *Traverse(const Linkedlist &list1);
     void removeTail(Linkedlist &list1);
+    void removeHead(Linkedlist &list1);
 
     // Destructor
     ~Linkedlist(){};

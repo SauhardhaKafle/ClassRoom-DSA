@@ -44,7 +44,6 @@ int ArrayQueue::front()
 // gives the last element
 int ArrayQueue::back()
 {
-
     return this->myArray[this->iback - 1];
 };
 

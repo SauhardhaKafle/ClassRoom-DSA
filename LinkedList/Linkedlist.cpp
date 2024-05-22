@@ -210,3 +210,17 @@ void Linkedlist::removeTail(Linkedlist &list1)
     }
     return;
 };
+
+// To remvoe from head
+void Linkedlist::removeHead(Linkedlist &list1)
+{
+
+    if (this->HEAD == nullptr)
+    {
+        return;
+    }
+    Node *temp = this->HEAD;
+
+    this->HEAD = this->HEAD->next;
+    delete temp;
+}
